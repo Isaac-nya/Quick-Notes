@@ -1,6 +1,6 @@
 function Signup() {
     return(
-        <h1>Signup</h1>
+        <h1>Get Started</h1>
     )
 } 
 

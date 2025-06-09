@@ -2,16 +2,20 @@ import Landing from "./Routes/landing";
 import {Routes, Route, Navigate} from 'react-router-dom'
 import Signup from "./Routes/Signup";
 import Login from "./Routes/Login";
+import Navbar from "./Components/Navbar";
 
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/sigup" element={<Signup />} />
-      </Routes>
+      <div className="min-h-screen bg-slate-50">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </div>
     </>
   );
 }
